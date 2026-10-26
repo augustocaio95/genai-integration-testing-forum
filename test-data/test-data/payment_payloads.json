@@ -1,0 +1,31 @@
+{
+  "valid_payload": {
+    "order_id": "ORD-2026-9981",
+    "customer_id": "CUST-402",
+    "amount": 150.00,
+    "currency": "BRL",
+    "payment_method": "CREDIT_CARD",
+    "card_token": "tok_1N8x2yL0aBcDeFgH12345678"
+  },
+  "missing_required_fields": {
+    "order_id": "ORD-2026-9982",
+    "amount": 150.00,
+    "currency": "BRL"
+  },
+  "invalid_data_types": {
+    "order_id": "ORD-2026-9983",
+    "customer_id": "CUST-402",
+    "amount": "150.00_STRING",
+    "currency": "BRL",
+    "payment_method": "CREDIT_CARD",
+    "card_token": 12345678
+  },
+  "boundary_values": {
+    "order_id": "ORD-2026-9984",
+    "customer_id": "CUST-402",
+    "amount": 0.00,
+    "currency": "BRL",
+    "payment_method": "CREDIT_CARD",
+    "card_token": "tok_1N8x2yL0aBcDeFgH12345678"
+  }
+}
